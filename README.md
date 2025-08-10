@@ -57,6 +57,10 @@ Through this project, I have:
 - Integrate with a backend to securely store user data and progress.
 
 **Output**  
-*(Add screenshots of the UI here)*
+<img width="1000" height="680" alt="Image" src="https://github.com/user-attachments/assets/2d22dd32-10ab-4eff-9adc-3216fb0339e9" />
+<img width="1000" height="680" alt="Image" src="https://github.com/user-attachments/assets/75eb0a3d-6c37-4bbf-8cf1-6f63dd0bc8ad" />
+<img width="1000" height="680" alt="Image" src="https://github.com/user-attachments/assets/1faffc96-6b11-48f8-a756-7432b28a2856" />
+<img width="1000" height="680" alt="Image" src="https://github.com/user-attachments/assets/878275b4-54c5-445e-9432-a085fda933de" />
+
 
 This project was developed as part of my **FRONT-END DEVELOPMENT** internship at **CODTECH IT SOLUTIONS** under the mentorship of **NEELA SANTHOSH**. It demonstrates my ability to design and implement responsive, interactive, and user-focused web interfaces.
