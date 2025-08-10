@@ -1,0 +1,130 @@
+<title>Course Details</title>
+ <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f4f8;
+      color: #333;
+      padding: 30px;
+    }
+
+    h1 {
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+    }
+
+    video {
+      width: 100%;
+      max-width: 700px;
+      height: auto;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      margin-bottom: 30px;
+    }
+
+    .mark-complete {
+      margin-top: 20px;
+    }
+
+    .mark-complete button {
+      background-color: #28a745;
+      color: white;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .mark-complete button:hover {
+      background-color: #218838;
+    }
+
+    a {
+      text-decoration: none; /* remove underline */
+      color: #007bff;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+
+<h1 id="course-title">Course Title</h1>
+  <p id="course-desc">Course Description</p>
+
+  <video id="course-video" controls>
+    <source id="video-source" src="" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <section class="mark-complete">
+    <button onclick="markcomplete()">Mark as Complete</button>
+</section>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const courseId = params.get("course");
+
+    const courses = {
+      html: {
+        title: "HTML Basics",
+        desc: "Learn the structure and syntax of HTML.",
+        video: "assets/videos/html-intro.mp4"
+      },
+      js: {
+        title: "JavaScript Essentials",
+        desc: "Master the fundamentals of JavaScript.",
+        video: "assets/videos/js-intro.mp4"
+      },
+      sql: {
+        title: "SQL",
+        desc: "Learn the SQL Database",
+        video: "assets/videos/html-intro.mp4"
+      }
+    };
+
+    const course = courses[courseId];
+
+    if (course) {
+      document.getElementById("course-title").textContent = course.title;
+      document.getElementById("course-desc").textContent = course.desc;
+      document.getElementById("video-source").src = course.video;
+      document.getElementById("course-video").load();
+    } else {
+      document.body.innerHTML = "<h2>Course not found</h2>";
+    }
+
+    function markcomplete(){
+        localStorage.setItem("Html-course-lesson1","complete");
+        alert("Marked as complete!");
+    }
+
+  </script>
+
+  <div class="footer">
+  <a href="./index.html">Back to Home</a>
+</div>
+<style>
+  a[href="./index.html"] {
+      display: inline-block;
+      margin: 30px auto;
+      text-align: center;
+      color: white;
+      background-color: #444;
+      padding: 12px 20px;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+    .footer {
+      text-align: center;
+    }
+</style>
+</body>
+</html>
