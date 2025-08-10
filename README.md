@@ -7,10 +7,12 @@
 **DURATION:** 4 WEEKS  
 **MENTOR:** NEELA SANTHOSH  
 
+
 ## Project Overview
 The E-Learning Platform UI is a responsive front-end interface for an online learning system built with HTML, CSS, and JavaScript.
 It includes a clean sign-up form, navigation bar, hero section, course listing page, video-based course details pages, and a progress tracking system using browser localStorage.
 The design focuses on simplicity, user-friendliness, and compatibility across devices, enabling learners to easily explore courses, watch lessons, and track their progress.
+
 
 ## Objectives
 - Create a user-friendly sign-up page for new learners.  
